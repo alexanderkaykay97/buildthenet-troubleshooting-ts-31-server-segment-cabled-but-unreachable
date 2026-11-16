@@ -1,0 +1,14 @@
+Current configuration : 1842 bytes
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+hostname Router-Edge
+!
+interface GigabitEthernet0/0
+ no shutdown
+ ip address 192.168.1.1 255.255.255.0
+!
+interface GigabitEthernet0/1
+ no shutdown
+ ip address 10.50.0.1 255.255.255.0
+end
